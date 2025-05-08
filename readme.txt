@@ -1,5 +1,5 @@
 Packages and api docs used in this project:
-    @headlessui/react
+@headlessui/react
     IMGBB Api
     @tanstack/react-query
     axios

@@ -19,6 +19,8 @@ const Rooms = () => {
 
   if (isLoading) return <LoadingSpinner />;
 
+  // const rooms =[];
+
   return (
     <Container>
       {rooms && rooms.length > 0 ? (
