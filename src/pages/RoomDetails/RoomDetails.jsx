@@ -14,7 +14,7 @@ const RoomDetails = () => {
   const { data: room = {}, isLoading } = useQuery({
     queryKey: ["room", id],
     queryFn: async () => {
-      const { data } = await axiosCommon.get(`/rooms/${id}`);
+      const { data } = await axiosCommon.get(`/room/${id}`);
       return data;
     },
   });
