@@ -1,19 +1,19 @@
 import { useState } from "react";
 import { GrLogout } from "react-icons/gr";
-// import { FcSettings } from "react-icons/fc";
-// import { BsFingerprint, BsFillHouseAddFill } from "react-icons/bs";
-// import { GrUserAdmin } from "react-icons/gr";
-// import { MdHomeWork } from "react-icons/md";
+import { FcSettings } from "react-icons/fc";
+import { BsFingerprint, BsFillHouseAddFill } from "react-icons/bs";
+import { GrUserAdmin } from "react-icons/gr";
+import { MdHomeWork } from "react-icons/md";
 import { AiOutlineBars } from "react-icons/ai";
-// import { BsGraphUp } from "react-icons/bs";
-// import { NavLink } from "react-router-dom";
+import { BsGraphUp } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import { Link } from "react-router-dom";
 import useRole from "../../../hooks/useRole";
-// import MenuItem from "./Menu/MenuItem";
-// import HostMenu from "./Menu/HostMenu";
-// import AdminMenu from "./Menu/AdminMenu";
-// import GuestMenu from "./Menu/GuestMenu";
+import MenuItem from "./Menu/MenuItem";
+import HostMenu from "./Menu/HostMenu";
+import AdminMenu from "./Menu/AdminMenu";
+import GuestMenu from "./Menu/GuestMenu";
 import ToggleBtn from "../../Shared/Button/ToggleBtn";
 
 const Sidebar = () => {
@@ -87,11 +87,11 @@ const Sidebar = () => {
             {/*  Menu Items */}
             <nav>
               {/* Statistics */}
-              {/* <MenuItem
+              <MenuItem
                 label="Statistics"
                 address="/dashboard"
                 icon={BsGraphUp}
-              /> */}
+              />
               {role === "guest" && <GuestMenu />}
               {role === "host" ? (
                 toggle ? (
@@ -109,11 +109,11 @@ const Sidebar = () => {
           <hr />
 
           {/* Profile Menu */}
-          {/* <MenuItem
+          <MenuItem
             label="Profile"
             address="/dashboard/profile"
             icon={FcSettings}
-          /> */}
+          />
 
           <button
             onClick={logOut}
