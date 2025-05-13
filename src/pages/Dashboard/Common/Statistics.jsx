@@ -1,7 +1,19 @@
-export default function Statistics() {
+import LoadingSpinner from "../../../components/Shared/LoadingSpinner";
+import useRole from "../../../hooks/useRole";
+import AdminStatistics from "../Admin/AdminStatistics";
+import HostStatistics from "../Host/HostStatistics";
+
+
+const Statistics = () => {
+  const [role, isLoading] = useRole();
+  if (isLoading) return <LoadingSpinner />;
   return (
-    <div>
-      <h1>Welcome to </h1>
-    </div>
+    <>
+      {role === "admin" && <AdminStatistics />}
+      {role === "host" && <HostStatistics />}
+      {/* {role === "guest" && <GuestStatistics />} */}
+    </>
   );
-}
+};
+
+export default Statistics;

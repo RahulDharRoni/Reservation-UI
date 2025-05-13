@@ -3,9 +3,8 @@ import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import useAuth from "../../../hooks/useAuth";
 import LoadingSpinner from "../../../components/Shared/LoadingSpinner";
-
-import toast from "react-hot-toast";
 import RoomDataRow from "../../../components/Dashboard/TableRows/RoomDataRows";
+import toast from "react-hot-toast";
 const MyListings = () => {
   const { user } = useAuth();
   const axiosSecure = useAxiosSecure();
@@ -111,6 +110,7 @@ const MyListings = () => {
                       key={room._id}
                       room={room}
                       handleDelete={handleDelete}
+                      refetch={refetch}
                     />
                   ))}
                 </tbody>

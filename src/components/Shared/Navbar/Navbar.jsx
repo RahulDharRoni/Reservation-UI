@@ -52,10 +52,10 @@ const Navbar = () => {
             <Link to="/">
               <img
                 // className='hidden md:block'
-                src="https://i.ibb.co/4ZXzmq5/logo.png"
+                src="https://i.ibb.co/svmr4j05/newlogo.png"
                 alt="logo"
-                width="100"
-                height="100"
+                width="200"
+                height="150"
               />
             </Link>
             {/* Dropdown Menu */}
