@@ -3,9 +3,10 @@ import Button from "../Shared/Button/Button";
 import { useState } from "react";
 import { DateRange } from "react-date-range";
 import { differenceInCalendarDays } from "date-fns";
-
 import useAuth from "../../hooks/useAuth";
 import BookingModal from "../Modal/BookingModel";
+// import BookingModal from "../Modal/BookingModel";
+
 const RoomReservation = ({ room, refetch }) => {
   const { user } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
@@ -21,11 +22,11 @@ const RoomReservation = ({ room, refetch }) => {
     setIsOpen(false);
   };
 
-  // total days * price
+  // ✅ Fix: use selected date range from state instead of room.from/to
   const totalPrice =
-    parseInt(differenceInCalendarDays(new Date(room.to), new Date(room.from))) *
+    differenceInCalendarDays(state[0].endDate, state[0].startDate) *
     room?.price;
-  console.log(totalPrice);
+
   return (
     <div className="rounded-xl border-[1px] border-neutral-200 overflow-hidden bg-white">
       <div className="flex items-center gap-1 p-4">
@@ -34,19 +35,13 @@ const RoomReservation = ({ room, refetch }) => {
       </div>
       <hr />
       <div className="flex justify-center">
-        {/* Calender */}
+        {/* Calendar */}
         <DateRange
           showDateDisplay={false}
           rangeColors={["#F6536D"]}
           onChange={(item) => {
-            console.log(item);
-            setState([
-              {
-                startDate: new Date(room.from),
-                endDate: new Date(room.to),
-                key: "selection",
-              },
-            ]);
+            // ✅ Fix: Update selected range with what the user selects
+            setState([item.selection]);
           }}
           moveRangeOnFirstSelection={false}
           ranges={state}
