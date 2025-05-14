@@ -68,7 +68,7 @@ const Sidebar = () => {
               <Link to="/">
                 <img
                   // className='hidden md:block'
-                  src="https://i.ibb.co/svmr4j05/newlogo.png"
+                  src="https://i.ibb.co/R4jpdghV/New-Project-2.png"
                   alt="logo"
                   width="300"
                   height="200"
