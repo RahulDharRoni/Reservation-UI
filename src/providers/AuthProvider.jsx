@@ -65,7 +65,7 @@ const AuthProvider = ({ children }) => {
     return data;
   };
 
-  // save user=================== Set Role
+  // save user
   const saveUser = async (user) => {
     const currentUser = {
       email: user?.email,
