@@ -1,0 +1,54 @@
+#  Reservation - Modern Booking Application
+
+Welcome to the official GitHub repository of **Reservation**, a full-featured, responsive booking platform built with React. This project integrates multiple modern libraries and tools to provide seamless user experiences, real-time data fetching, and secure payment processing.
+
+---
+
+##  Features
+
+- 🧠 **Headless UI** – Accessible, unstyled UI primitives for building custom UIs.
+- 📅 **Date Selection** – User-friendly date range picker with `react-date-range` and `date-fns`.
+- 🔒 **Authentication** – Secure login/signup with Firebase.
+- ☁️ **Image Hosting** – Seamless image uploads using IMGBB API.
+- ⚡ **Data Fetching** – Powerful and flexible data fetching with `@tanstack/react-query`.
+- 💳 **Stripe Integration** – Secure payment processing using Stripe.
+- 📊 **Analytics** – Data visualization using `react-google-charts`.
+- 🔥 **UI/UX** – Hot toast notifications, loading spinners, dynamic routing, SEO optimization, and more.
+
+---
+
+##  Tech Stack
+
+| Technology | Usage |
+|------------|--------|
+| React | Frontend Library |
+| @headlessui/react | Custom UI Components |
+| react-date-range | Calendar UI for selecting date ranges |
+| date-fns | Date utility functions |
+| axios | HTTP requests |
+| @tanstack/react-query | Server state management |
+| query-string | Query string manipulation |
+| firebase | Authentication & Hosting |
+| IMGBB API | Image upload and hosting |
+| react-helmet-async | SEO optimization |
+| react-hot-toast | Toast notifications |
+| react-icons | Icon support |
+| react-router-dom | Routing |
+| react-spinners | Loading indicators |
+| Stripe JS SDK | Payment processing |
+| react-google-charts | Chart visualizations |
+
+---
+
+## 📸 Screenshots
+
+> _(Include some screenshots here showcasing the UI and features)_
+
+---
+
+## 🔧 Setup & Installation
+
+1. **Clone the repo:**
+   ```bash
+   git clone https://github.com/yourusername/your-repo-name.git
+   cd your-repo-name
