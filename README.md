@@ -41,15 +41,10 @@ Welcome to the official GitHub repository of **Reservation**, a full-featured, r
 
 ---
 
-## 📸 Screenshots
-
-> _(Include some screenshots here showcasing the UI and features)_
-
----
-
 ## 🔧 Setup & Installation
 
-1. **Clone the repo:**
+1. **Node Server link the repo:**
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   - https://github.com/RahulDharRoni/reservation-server--MVC-architecture
+   - https://github.com/RahulDharRoni/Reservation-UI-Server-Backend
+   
