@@ -3,7 +3,7 @@
 Welcome to the official GitHub repository of **Reservation**, a full-featured, responsive booking platform built with React. This project integrates multiple modern libraries and tools to provide seamless user experiences, real-time data fetching, and secure payment processing.
 
 ---
-[Project Requirement Doc]([https://your-link.com](https://docs.google.com/document/d/12S3i6uiTheII63v1PkCYaQSZGbZH5EyAKIe-sIl75M0/edit?tab=t.0#heading=h.70gcklg33tv2))
+# [View Project Description](https://docs.google.com/document/d/12S3i6uiTheII63v1PkCYaQSZGbZH5EyAKIe-sIl75M0/edit?tab=t.0#heading=h.70gcklg33tv2)
 
 ##  Features
 
